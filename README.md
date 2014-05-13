@@ -29,30 +29,7 @@ caminho de el path " com.example.template. ", por el nombre nuevo del paquete.
  Modifica el siguiente método
  pdManager.openPatch(" nome_do_patch.pd ", com.example.template.R.raw.patch); 
  
-5.- Haz una lista con los mensajes que se enviarán y se recibirán en PD, además de los nombres de los array
-    que se utilizaran 
-
-	PD nome Array:
-		array_crash
-		array_clap
-		array_clav
-		array_kick
-		
-	Pd receive:
-		r som_Clash01
-		r SomClap01
-		r SomClav01
-		r SomKick01
-		
-	PD send:
-		s pos_clash
-		s pos_clap
-		s pos_clav
-		s pos_k
-
-
- 
- X- También dentro de OnCreate tienes que declarar todos los strings que definiran los mensajes que se 
- reciben y se envian a PD
+5.- Dentro de OnCreate() en la clase PAppletInicial() tienes que declarar todos los strings que definiran los mensajes que se 
+ reciben de PD
  
  
